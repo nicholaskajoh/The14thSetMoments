@@ -1,0 +1,54 @@
+body {
+    font-family: verdana, sans-serif;
+    text-align: center;
+}
+
+.ig-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ig-photo {
+    margin: 0 5px;
+}
+
+.ig-photo img {
+    width: 400px;
+    height: 400px;
+}
+
+@media all and (min-width: 1024px) {
+    .ig-container {
+        padding: 0 50px;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .ig-container {
+        flex-direction: column;
+    }
+
+    .ig-photo {
+        margin-bottom: 5px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .ig-container {
+      flex-direction: column;
+    }
+
+    .ig-photo {
+        margin-bottom: 5px;
+    }
+
+    .ig-photo img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+footer {
+    padding: 10px;
+}
