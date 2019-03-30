@@ -1,4 +1,4 @@
-const convocationDate = new Date('2019-07-27');
+const convocationDate = new Date('2019-07-19');
 
 setInterval(function() {
   const now = new Date();
