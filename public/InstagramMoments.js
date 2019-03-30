@@ -23,7 +23,11 @@ function getNextPhotoIndex(currentIndex, numPhotos) {
 function displayPhotos(indexes, posts) {
   for (let i = 0; i < indexes.length; i++) {
     const image = document.getElementById(`igp_${i + 1}`);
-    image.src = posts[indexes[i]].node.thumbnail_resources.slice(-1)[0].src;
+    if (indexes[i] == -1) {
+      image.src = '/placeholder.jpg';
+    } else {
+      image.src = posts[indexes[i]].node.thumbnail_resources.slice(-1)[0].src;
+    }
   }
 }
 
